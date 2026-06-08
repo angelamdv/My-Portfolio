@@ -353,7 +353,7 @@ function sendContactMessage() {
 
 
 /* Resume */
-var RESUME_LINK_URL = "https://drive.google.com/file/d/1qlaeV1eoeN6KPpSAwj87vBAl6hPZXaxU/view?usp=sharing";
+var RESUME_LINK_URL = "https://drive.google.com/file/d/1xOemnEDAS_3lMJmweSun722YnxZBYP6H/view?usp=sharing";
 
 function openResume() {
   window.open(RESUME_LINK_URL, "_blank");
