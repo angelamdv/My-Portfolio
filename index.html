@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angela Mediavillo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div id="cursor_dot"></div>
+  <div id="cursor_ring"></div>
+
+  <div id="bg_strip">
+    <img src="bg/1.png" class="bg_strip_img" alt="" />
+    <img src="bg/2.png" class="bg_strip_img" alt="" />
+    <img src="bg/3.png" class="bg_strip_img" alt="" />
+    <img src="bg/4.png" class="bg_strip_img" alt="" />
+    <img src="bg/5.png" class="bg_strip_img" alt="" />
+    <img src="bg/6.png" class="bg_strip_img" alt="" />
+    <img src="bg/7.png" class="bg_strip_img" alt="" />
+    <img src="bg/8.png" class="bg_strip_img" alt="" />
+  </div>
+
+  <!-- Welcome Page -->
+  <div id="welcome_screen">
+    <div id="welcome_particles"></div>
+    <img src="icons/Spade Top.png"    id="spade_top_image"    alt="Spade Top" />
+    <p   id="welcome_name_text">MEDIAVILLO</p>
+    <img src="icons/Spade Bottom.png" id="spade_bottom_image" alt="Spade Bottom" />
+    <p id="welcome_tagline">Portfolio · 2026</p>
+  </div>
+
+  <!-- Main -->
+  <div id="main_content" class="hidden">
+
+    <!-- Top Bar -->
+    <nav id="top_navbar">
+      <div id="nav_logo">AM</div>
+      <div id="nav_links">
+        <a href="#section_home"       class="nav_link">HOME</a>
+        <a href="#section_about"      class="nav_link">ABOUT</a>
+        <a href="#section_education"  class="nav_link">EDUCATION</a>
+        <a href="#section_experience" class="nav_link">EXPERIENCE</a>
+        <a href="#section_skills"     class="nav_link">SKILLS</a>
+        <a href="#section_projects"   class="nav_link">PROJECTS</a>
+        <a href="#section_contacts"   class="nav_link">CONTACTS</a>
+      </div>
+      <div id="nav_hamburger" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- Home Section-->
+    <section id="section_home" class="page_section">
+
+      <div id="home_text_block">
+        <p id="home_greeting_text" class="reveal_up">HI! I'M</p>
+        <h1 id="home_name_heading" class="reveal_up delay1">ANGELA<br />MEDIAVILLO</h1>
+        <p id="home_tagline_text" class="reveal_up delay2">A Computer Engineering Student<br />Major in System Development</p>
+        <div id="home_cta_row" class="reveal_up delay3">
+          <a href="#section_about"   class="cta_button primary_cta">DISCOVER MORE</a>
+          <a href="#section_contacts" class="cta_button ghost_cta">GET IN TOUCH</a>
+        </div>
+      </div>
+
+      <img src="icons/Home Profile.png" id="home_profile_image" alt="Angela Mediavillo" class="reveal_right" />
+
+      <!-- Floating Badges -->
+      <div class="float_badge" id="badge_py" style="top:30%;right:38%;">
+        <img src="icons/Python Logo.png" alt="Python"/><span>Python</span>
+      </div>
+      <div class="float_badge" id="badge_js" style="top:55%;right:32%;">
+        <img src="icons/SQLite Logo.png" alt="SQLite"/><span>SQLite</span>
+      </div>
+      <div class="float_badge" id="badge_sf" style="top:20%;right:24%;">
+        <img src="icons/CSS Logo.png" alt="CSS"/><span>CSS</span>
+      </div>
+
+      <div id="scroll_hint_text">
+        <span>↓</span> SCROLL DOWN TO KNOW MORE <span>↓</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="section_about" class="page_section">
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">GET TO KNOW ME</p>
+        <h2 class="section_title_heading">ABOUT ME</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="about_layout_wrapper">
+        <div id="about_photo_wrapper">
+          <div id="about_photo_ring"></div>
+          <img src="icons/About Me Profile.png" id="about_profile_image" alt="Angela Mediavillo" />
+          
+          <!-- Floating Stat Bubbles
+          <div class="stat_bubble" style="top:-10%;right:-12%;">
+            <span class="stat_num">2+</span>
+            <span class="stat_lbl">Years<br/>Coding</span>
+          </div>
+          <div class="stat_bubble" style="bottom:5%;left:-14%;">
+            <span class="stat_num">10+</span>
+            <span class="stat_lbl">Skills</span>
+          </div>
+        -->
+        </div>
+
+        <div id="about_statements_list">
+          <div class="about_statement_row reveal_up">
+            <div class="about_icon_wrap">♠</div>
+            <p class="about_statement_text">
+              Currently pursuing a Bachelor of Science in Computer Engineering Major in System Development at
+              <strong>Polytechnic University of the Philippines Sta. Mesa</strong>.
+            </p>
+          </div>
+          <div class="about_statement_row reveal_up delay1">
+            <div class="about_icon_wrap">♠</div>
+            <p class="about_statement_text">
+              Passionate about software development and creating systems that solve real-world problems with elegant design.
+            </p>
+          </div>
+          <div class="about_statement_row reveal_up delay2">
+            <div class="about_icon_wrap">♠</div>
+            <p class="about_statement_text">
+              Experienced in both front-end and back-end web development through academic projects and internship training.
+            </p>
+          </div>
+          <div class="about_statement_row reveal_up delay3">
+            <div class="about_icon_wrap">♠</div>
+            <p class="about_statement_text">I enjoy building electronic devices and exploring hardware-software integration.</p>
+          </div>
+          <div class="about_statement_row reveal_up delay4">
+            <div class="about_icon_wrap">♠</div>
+            <p class="about_statement_text">Always open to learning, collaborating, and experiencing new technologies.</p>
+          </div>
+          <div id="about_btn_row">
+            <button id="resume_button" onclick="openResume()">
+              <span>VIEW RESUME</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </button>
+            <a href="#section_contacts" class="ghost_pill_btn">CONTACT ME</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="section_education" class="page_section">
+
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">WHAT I HAVE STUDIED SO FAR</p>
+        <h2 class="section_title_heading">EDUCATION</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="education_cards_row">
+
+        <div class="edu_flip_card reveal_up">
+          <div class="edu_flip_inner">
+            <div class="edu_flip_front">
+              <img src="icons/PUP Logo.png" class="edu_card_logo" alt="PUP" />
+              <h3 class="edu_card_degree">BS Computer Engineering</h3>
+              <p class="edu_card_school">Polytechnic University of the Philippines</p>
+              <p class="edu_card_year">2023 – Present</p>
+              <div class="edu_card_hint">Hover to see more ↻</div>
+            </div>
+            <div class="edu_flip_back">
+              <h3>PUP Sta. Mesa</h3>
+              <p class="edu_back_major">Major: System Development</p>
+              <ul class="edu_back_list">
+                <li>📚 Rizal LGU Scholar</li>
+                <li>📚 Computer Engineering core curriculum</li>
+                <li>📚 Hardware &amp; Software tracks</li>
+                <li>📚 Web &amp; Systems Development focus</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu_timeline_connector">
+          <div class="edu_timeline_line"></div>
+          <div class="edu_timeline_dot"></div>
+          <div class="edu_timeline_line"></div>
+        </div>
+
+        <div class="edu_flip_card reveal_up delay2">
+          <div class="edu_flip_inner">
+            <div class="edu_flip_front">
+              <img src="icons/JSMJC Logo.png" class="edu_card_logo" alt="JSMJC" />
+              <h3 class="edu_card_degree">Senior High School</h3>
+              <p class="edu_card_school">Juan Sumulong Memorial Junior High School</p>
+              <p class="edu_card_year">2021 – 2023</p>
+              <div class="edu_card_hint">Hover to see more ↻</div>
+            </div>
+            <div class="edu_flip_back">
+              <h3>JSMJC Taytay</h3>
+              <p class="edu_back_major">Senior High School Graduate</p>
+              <ul class="edu_back_list">
+                <li>📖 Batch Top 10</li>
+                <li>📖 STEM Track</li>
+                <li>📖 Academic Excellence Awardee</li>
+                <li>📖 Leadership &amp; Co-curricular activities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="section_experience" class="page_section">
+
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">MY PROFESSIONAL JOURNEY</p>
+        <h2 class="section_title_heading">EXPERIENCE</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="experience_layout_wrapper">
+        <div id="experience_job_list">
+          <div class="experience_job_card active_job_card" onclick="showJobDetails(0)">
+            <img src="icons/8Box Logo.png" class="experience_company_logo" alt="8Box Solutions" />
+            <div>
+              <p class="experience_job_title_text">Backend Intern Developer</p>
+              <p class="experience_company_name_text">8Box Solutions Inc.</p>
+              <p class="experience_date_badge">July – Sep 2025</p>
+            </div>
+          </div>
+        </div>
+        <div id="experience_details_box"></div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="section_skills" class="page_section">
+
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">MY TECHNICAL CAPABILITIES</p>
+        <h2 class="section_title_heading">SKILLS</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="skill_tabs">
+        <button class="skill_tab active_tab" onclick="filterSkills('all')">ALL</button>
+        <button class="skill_tab" onclick="filterSkills('programming')">PROGRAMMING</button>
+        <button class="skill_tab" onclick="filterSkills('tools')">TOOLS &amp; SOFTWARE</button>
+        <button class="skill_tab" onclick="filterSkills('hardware')">HARDWARE</button>
+      </div>
+
+      <div id="skills_grid">
+        <div class="skill_card" data-category="programming" data-tip="General-purpose scripting, data analysis &amp; automation">
+          <div class="skill_card_inner">
+            <img src="icons/Python Logo.png" class="skill_logo_image" alt="Python" />
+            <p class="skill_name_text">PYTHON</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill_tooltip">Python — Scripting &amp; Automation</div>
+        </div>
+        <div class="skill_card" data-category="programming" data-tip="Semantic markup for web pages and applications">
+          <div class="skill_card_inner">
+            <img src="icons/HTML Logo.png" class="skill_logo_image" alt="HTML" />
+            <p class="skill_name_text">HTML</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill_tooltip">HTML — Web Structure</div>
+        </div>
+        <div class="skill_card" data-category="programming" data-tip="Styling, animations, and responsive layouts">
+          <div class="skill_card_inner">
+            <img src="icons/CSS Logo.png" class="skill_logo_image" alt="CSS" />
+            <p class="skill_name_text">CSS</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill_tooltip">CSS — Styling &amp; Layout</div>
+        </div>
+        <div class="skill_card" data-category="programming" data-tip="DOM manipulation and dynamic web interactions">
+          <div class="skill_card_inner">
+            <img src="icons/JavaScript Logo.png" class="skill_logo_image" alt="JavaScript" />
+            <p class="skill_name_text">JAVASCRIPT</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:60%"></div></div>
+          </div>
+          <div class="skill_tooltip">JavaScript — Dynamic Interactions</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="Lightweight relational database management">
+          <div class="skill_card_inner">
+            <img src="icons/SQLite Logo.png" class="skill_logo_image" alt="SQLite" />
+            <p class="skill_name_text">SQLITE</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill_tooltip">SQLite — Database Management</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="Rapid web application development platform">
+          <div class="skill_card_inner">
+            <img src="icons/PHPRunner Logo.png" class="skill_logo_image" alt="PHPRunner" />
+            <p class="skill_name_text">PHPRUNNER</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill_tooltip">PHPRunner — Web App Builder</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="CRM platform for business and client management">
+          <div class="skill_card_inner">
+            <img src="icons/Salesforce Logo.png" class="skill_logo_image" alt="Salesforce" />
+            <p class="skill_name_text">SALESFORCE</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill_tooltip">Salesforce — CRM Platform</div>
+        </div>
+        <div class="skill_card" data-category="hardware" data-tip="Microcontroller programming for embedded systems">
+          <div class="skill_card_inner">
+            <img src="icons/C Logo.png" class="skill_logo_image" alt="C/C++" />
+            <p class="skill_name_text">C / C++</p>
+            <p class="skill_sub_text">(Electronics)</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:60%"></div></div>
+          </div>
+          <div class="skill_tooltip">C/C++ — Embedded Systems</div>
+        </div>
+        <div class="skill_card" data-category="hardware" data-tip="Circuit design, prototyping &amp; device building">
+          <div class="skill_card_inner">
+            <img src="icons/Electronics Logo.png" class="skill_logo_image" alt="Electronics" />
+            <p class="skill_name_text">ELECTRONICS</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill_tooltip">Electronics — Circuit &amp; Hardware</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="2D/3D technical drawing and architectural design">
+          <div class="skill_card_inner">
+            <img src="icons/CAD Logo.png" class="skill_logo_image" alt="AutoCAD" />
+            <p class="skill_name_text">AUTOCAD</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill_tooltip">AutoCAD — Technical Drawing</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="Office productivity: Word, Excel, PowerPoint">
+          <div class="skill_card_inner">
+            <img src="icons/Microsoft Logo.png" class="skill_logo_image" alt="Microsoft" />
+            <p class="skill_name_text">MICROSOFT</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill_tooltip">Microsoft Office Suite</div>
+        </div>
+        <div class="skill_card" data-category="tools" data-tip="Graphic design, presentations &amp; visual content">
+          <div class="skill_card_inner">
+            <img src="icons/Canva Logo.png" class="skill_logo_image" alt="Canva" />
+            <p class="skill_name_text">CANVA</p>
+            <div class="skill_level_bar"><div class="skill_level_fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill_tooltip">Canva — Graphic Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="section_projects" class="page_section">
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">THINGS I'VE BUILT</p>
+        <h2 class="section_title_heading">PROJECTS</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="projects_gallery_wrapper">
+        <button class="gallery_arrow" id="gallery_prev" onclick="slideGallery(-1)">&#8249;</button>
+        <div id="projects_gallery_track_outer">
+          <div id="projects_gallery_track">
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/Coffee Shop.png" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">WEBSITE SYSTEM</p>
+                <h3 class="project_title">Coffee Shop Website</h3>
+                <p class="project_desc">A clean and user-friendly web application designed to present a coffee shop's essential business information, including menus, career opportunities, and customer testimonials.</p>
+                <div class="project_tech_tags">
+                  <span>HTML</span><span>CSS</span><span>Canva</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/Quiz Master.jpg" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">WEBSITE SYSTEM</p>
+                <h3 class="project_title">Quiz Master</h3>
+                <p class="project_desc">An interactive quiz application built with modern web technologies, featuring real-time scoring and detailed performance analytics.</p>
+                <div class="project_tech_tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/Traffic Lights.jpg" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">ELECTRONICS</p>
+                <h3 class="project_title">Traffic Light System</h3>
+                <p class="project_desc">A simple traffic light control system implemented using basic electronics and logic design principles.</p>
+                <div class="project_tech_tags">
+                  <span>Electronics</span><span>Logic Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/mouse.jpg" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">ELECTRONICS</p>
+                <h3 class="project_title">DIY Mouse</h3>
+                <p class="project_desc">A homemade computer mouse built from scratch using ESP32, basic electronic components and programmed with simple logic.</p>
+                <div class="project_tech_tags">
+                  <span>Electronics</span><span>Programming</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/PUP Hymn.jpg" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">WEBSITE</p>
+                <h3 class="project_title">PUP Hymn Audio and Lyrics Website</h3>
+                <p class="project_desc">A web application providing audio playback and lyrics for the Polytechnic University of the Philippines Hymn.</p>
+                <div class="project_tech_tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_slide">
+              <div class="project_slide_image"><img src="icons/pizza.jpg" alt="Project Preview">
+              </div>
+              <div class="project_slide_info">
+                <p class="project_type_tag">ORDERING SYSTEM</p>
+                <h3 class="project_title">Top It Off Pizzeria</h3>
+                <p class="project_desc">A web application where users can create do-it-yourself pizza at Top It Off Pizzeria.</p>
+                <div class="project_tech_tags">
+                  <span>Python</span><span>Canva</span><span>SQL</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="gallery_arrow" id="gallery_next" onclick="slideGallery(1)">&#8250;</button>
+      </div>
+      <div id="gallery_dots"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="section_contacts" class="page_section">
+
+      <div class="section_label_block">
+        <p class="section_eyebrow_text">LET'S BUILD SOMETHING TOGETHER</p>
+        <h2 class="section_title_heading">CONTACTS</h2>
+        <div class="title_underline"></div>
+      </div>
+
+      <div id="contacts_social_grid">
+        <a href="https://www.facebook.com/angela.mediavillo/?viewas=100000686899395" target="_blank" class="social_link_card" data-label="Connect on Facebook">
+          <div class="social_card_glow"></div>
+          <img src="icons/FB Logo.png" class="social_logo_image" alt="Facebook" />
+          <p class="social_name_text">FACEBOOK</p>
+        </a>
+        <a href="mailto:youremail@gmail.com" class="social_link_card" data-label="Send an Email">
+          <div class="social_card_glow"></div>
+          <img src="icons/Gmail Logo.png" class="social_logo_image" alt="Gmail" />
+          <p class="social_name_text">GMAIL</p>
+        </a>
+        <a href="https://github.com/angelamdv" target="_blank" class="social_link_card" data-label="View my Code">
+          <div class="social_card_glow"></div>
+          <img src="icons/GitHub Logo.png" class="social_logo_image" alt="GitHub" />
+          <p class="social_name_text">GITHUB</p>
+        </a>
+        <a href="https://www.linkedin.com/in/angela-mediavillo-819b87413/" target="_blank" class="social_link_card" data-label="Connect Professionally">
+          <div class="social_card_glow"></div>
+          <img src="icons/Linked In Logo.png" class="social_logo_image" alt="LinkedIn" />
+          <p class="social_name_text">LINKEDIN</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="section_contact_form" class="page_section">
+
+      <div id="contact_form_box">
+        <p class="section_eyebrow_text" style="text-align:center;">GET IN TOUCH</p>
+        <h2 class="section_title_heading" style="text-align:center; margin-bottom:20px;">CONTACT</h2>
+        <div class="title_underline" style="margin:0 auto 2vw;"></div>
+
+        <div class="contact_field_row">
+          <label class="contact_field_label" for="sender_name_input">NAME</label>
+          <input type="text" id="sender_name_input" class="contact_text_input" placeholder="Your name" />
+        </div>
+        <div class="contact_field_row">
+          <label class="contact_field_label" for="sender_email_input">EMAIL</label>
+          <input type="email" id="sender_email_input" class="contact_text_input" placeholder="your@email.com" />
+        </div>
+        <div class="contact_field_row contact_message_row">
+          <label class="contact_field_label" for="sender_message_input">MESSAGE</label>
+          <textarea id="sender_message_input" class="contact_textarea_input"
+            placeholder="Hi Angela! I'd love to talk about some opportunities…"></textarea>
+        </div>
+      </div>
+
+      <button id="send_message_button" onclick="sendContactMessage()">
+        <span>SEND MESSAGE</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+      <p id="send_status_text"></p>
+
+      <footer id="site_footer">
+        <p>© 2025 Angela Mediavillo · Built with passion &amp; code</p>
+      </footer>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
